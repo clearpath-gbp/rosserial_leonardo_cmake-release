@@ -1,0 +1,54 @@
+#!/usr/bin/env python
+
+import serial
+from sys import argv, stderr, stdout
+from time import sleep
+from os.path import exists
+
+ATTEMPTS = 5
+
+def main():
+    if len(argv) != 2:
+        stderr.write("No port specified.\n")
+        exit(1)
+
+    port = argv[1]
+
+    for attempt in range(ATTEMPTS):
+        if not exists(port):
+            stderr.write("Port [%s] not found.\n" % port)
+            exit(1)
+
+        # Attempt to trigger reset.
+        serial.Serial(port, 1200).close()
+
+        # Wait for device to go down (into reset)
+        WAIT_SECONDS = 1.0
+        WAIT_STEPS = 20
+        for wait_for_device in range(WAIT_STEPS):
+            if not exists(port):
+                break
+            sleep(WAIT_SECONDS / WAIT_STEPS)
+
+        if exists(port):
+            stderr.write("Reset appears to have failed, retrying.\n")
+            sleep(0.5)
+            # Open briefly at a "normal" baud rate. At least in Parallels, this is 
+            # sometimes necessary to recover from a fault state.
+            serial.Serial(port, 57600).close()
+            sleep(0.4)
+            continue
+
+        # Wait for device to reappear (in the bootloader)
+        WAIT_SECONDS = 2.0
+        WAIT_STEPS = 50
+        for wait_for_device in range(WAIT_STEPS):
+            if exists(port):
+                stdout.write("Device reset and in bootloader.\n")
+                exit(0)
+            sleep(WAIT_SECONDS / WAIT_STEPS)
+
+    stderr.write("Failed to reset device after %d attempts.\n" % ATTEMPTS)         
+    exit(1)
+
+main()
