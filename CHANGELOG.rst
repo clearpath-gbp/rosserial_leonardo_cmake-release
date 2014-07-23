@@ -2,6 +2,12 @@
 Changelog for package rosserial_leonardo_cmake
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.2 (2014-07-22)
+------------------
+* Remove unneeded build-time dependencies.
+* Third time's the charm at fixing the downloader.
+* Contributors: Mike Purvis
+
 0.1.1 (2014-07-22)
 ------------------
 * Specify build-time rosdeps properly, switch wget -> curl.
