@@ -1,0 +1,35 @@
+ros-hydro-rosserial-leonardo-cmake (0.1.2-0quantal) quantal; urgency=high
+
+  * Remove unneeded build-time dependencies.
+  * Third time's the charm at fixing the downloader.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Tue, 22 Jul 2014 04:00:00 -0000
+
+ros-hydro-rosserial-leonardo-cmake (0.1.1-0quantal) quantal; urgency=high
+
+  * Specify build-time rosdeps properly, switch wget -> curl.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Tue, 22 Jul 2014 04:00:00 -0000
+
+ros-hydro-rosserial-leonardo-cmake (0.1.0-0quantal) quantal; urgency=high
+
+  * Initial release to ros-public.
+  * Fix for installing bootloader on factory IC.
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Mon, 21 Jul 2014 04:00:00 -0000
+
+ros-hydro-rosserial-leonardo-cmake (0.0.2-0quantal) quantal; urgency=high
+
+  * Add avr tools as run dependencies.
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Tue, 28 Jan 2014 05:00:00 -0000
+
+ros-hydro-rosserial-leonardo-cmake (0.0.1-0quantal) quantal; urgency=high
+
+  * Initial release
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Wed, 22 Jan 2014 05:00:00 -0000
+
+
