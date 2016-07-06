@@ -1,3 +1,26 @@
+## rosserial_leonardo_cmake (indigo) - 0.1.3-0
+
+The packages in the `rosserial_leonardo_cmake` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo rosserial_leonardo_cmake --new-track` on `Wed, 06 Jul 2016 13:34:07 -0000`
+
+The `rosserial_leonardo_cmake` package was released.
+
+Version of package(s) in repository `rosserial_leonardo_cmake`:
+
+- upstream repository: https://github.com/clearpathrobotics/rosserial_leonardo_cmake.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.1.3-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## rosserial_leonardo_cmake (hydro) - 0.1.3-0
 
 The packages in the `rosserial_leonardo_cmake` repository were released into the `hydro` distro by running `/usr/bin/bloom-release -t hydro -r hydro rosserial_leonardo_cmake` on `Wed, 23 Jul 2014 12:43:23 -0000`
