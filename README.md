@@ -1,3 +1,26 @@
+## rosserial_leonardo_cmake (kinetic) - 0.1.4-0
+
+The packages in the `rosserial_leonardo_cmake` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -t kinetic -r kinetic rosserial_leonardo_cmake` on `Thu, 18 Apr 2019 20:16:08 -0000`
+
+The `rosserial_leonardo_cmake` package was released.
+
+Version of package(s) in repository `rosserial_leonardo_cmake`:
+
+- upstream repository: https://github.com/clearpathrobotics/rosserial_leonardo_cmake.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.1.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.7.2`
+- catkin_pkg version: `0.4.11`
+- rosdep version: `0.15.1`
+- rosdistro version: `0.7.3`
+- vcstools version: `0.1.40`
+
+
 ## rosserial_leonardo_cmake (indigo) - 0.1.3-0
 
 The packages in the `rosserial_leonardo_cmake` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo rosserial_leonardo_cmake --new-track` on `Wed, 06 Jul 2016 13:34:07 -0000`
