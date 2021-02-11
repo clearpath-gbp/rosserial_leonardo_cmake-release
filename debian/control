@@ -1,0 +1,12 @@
+Source: ros-melodic-rosserial-leonardo-cmake
+Section: misc
+Priority: optional
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), libtar-dev, ros-melodic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-rosserial-leonardo-cmake
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, avr-libc, avrdude, gcc-avr, ros-melodic-rosserial-arduino
+Description: CMake scripts for building Arduino Leonardo (atmega32u4) Firmwares
